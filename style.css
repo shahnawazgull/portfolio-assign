@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(228, 228, 228, 0.596);
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0e1824;
+    color: white;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.about {
+    background-color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 3.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    background-color: #fff;
+}
+
+.heading {
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project {
+    max-width: 320px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: all ease-in .1s;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+}
+
+.project a img {
+    width: 100%;
+}
+
+.form-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: url("https://images.unsplash.com/photo-1728341559736-93be0fea3eda?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+label {
+    color: white;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #80787880;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007B7F;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 19px;
+    max-width: 40%;
+    margin: 0 auto;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all ease-in .2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #f1f1f1ec;
+}
+
+button:hover {
+    background-color: #065e61;
+}
+
+.footer-section {
+    margin-top: 3rem;
+    background-color: #0e1824;
+    padding: 50px;
+    color: white;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #1a2f49;
+    color: #fff;
+}
+
+.copy {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        max-width: 80%;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .project {
+        max-width: 90%;
+    }
+
+    .about {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .project {
+        max-width: 90%;
+    }
+
+    .about {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .footer-section {
+        padding: 30px;
+    }
+}
